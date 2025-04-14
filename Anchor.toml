@@ -1,14 +1,13 @@
-[features]
-seeds = false
-skip-lint = false
-
 [programs.devnet]
-lowcapfun = "DMzPtouoz4k44QN7qrdLxW5K2dHMAaozLxjt1XEuPcCg"
+lowcapfun = "9wfonTvRiPDhLKZLCDWyjuZfJCA8T1ABUreFYPhJWd1Y"
+
+[registry]
+url = "https://api.apr.dev"
 
 [provider]
-cluster = "devnet"
-wallet = "~/.config/solana/id.json"
+cluster = "https://api.devnet.solana.com"
+wallet = "/home/codespace/.config/solana/id.json"
 
 [scripts]
-test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
+launch = "ts-node scripts/launch.ts"
 
